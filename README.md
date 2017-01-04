@@ -32,6 +32,7 @@ $ createdb mydb
 $ psql -s mydb
 # create user someuser password 'somepassword';
 # GRANT ALL PRIVILEGES ON DATABASE mydb TO someuser;
+# psql mydb < misc/dump.sql
 
 
 # Install dependencies
@@ -39,6 +40,10 @@ npm install
 
 # start server
 npm run start
+
+# start server in debug mode
+# for specific debugging guidelines check: https://blog.hospodarets.com/nodejs-debugging-in-chrome-devtools
+npm run start:debug
 
 # Client url: http://localhost:4200
 # Application ( epxress ) API: http://localhost:4300
